@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+.heading {
+    text-align: center;
+}
+
+.container {
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+}
+
+.element {
+    width: 5em;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.hdn {
+    visibility: hidden;
+}
+
+.symbol {
+    font-size: 1.4em;
+}
+
+.atomic-weight {
+    font-size: .7em;
+}
+
+.element-name {
+    font-size: .7em;
+}
+
+.atomic-number {
+    float: left;
+    font-size: .7em;
+    position: absolute;
+}
+
+.alkali {
+    background: red;
+}
+
+.alkaline {
+    background: orange;
+}
+
+.reactive {
+    background: yellow;
+}
+
+.transition {
+    background: #b7a6f7;
+}
+
+.metalloid {
+    background: #86e391;
+}
+
+.noble {
+    background:#cea7db;
+}
+
+.post-transition {
+    background: #a456fc;
+}
+
+.lanthanide {
+    background: #5cc7ed;
+}
+
+.actinide {
+    background: #5cedba;
+}
+
+.unknown {
+    background: #c4c4c4;
+}
