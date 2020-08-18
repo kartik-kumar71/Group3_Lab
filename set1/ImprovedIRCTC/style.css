@@ -1,0 +1,31 @@
+.navbar-custom{
+	background-color: #F98C3A;
+	box-shadow: 0px 20px 20px rgba(99,51,15,0.3);
+}
+
+.carousel-inner > .carousel-item > img {
+  margin: 0 auto;
+  padding: 20px 80px 30px 80px;
+  margin-bottom: 30px;
+
+}
+
+body {
+  background: #FFE0C1;
+  background: linear-gradient(to right, #F99F46, #F97E05);
+}
+#sticky-footer {
+  flex-shrink: none;
+  color: #424141;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  background-color: #FBB81E;
+}
+.font2{
+	font-family: 'Playfair Display', serif;
+}
+.inc{
+	font-size: 17px;
+	font-family: 'Assistant', sans-serif;
+}
