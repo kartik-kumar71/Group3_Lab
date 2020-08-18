@@ -1,4 +1,5 @@
 
+
 $(".grid-item").on("click", handleClick)
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
@@ -8,6 +9,9 @@ var imgSrc = ""
 
 function handleClick (){
     var clickedButton = this.innerHTML;
+        
+        
+    
 
     switch (clickedButton) {
         case "A" :
@@ -36,6 +40,36 @@ function handleClick (){
             modalImg.height = "500";
             captionText.innerHTML = "Cat";
             break;
+
+        case "D" :
+            imgSrc = "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2019/12/03202400/Yellow-Labrador-Retriever.jpg";
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalImg.width = "500";
+            modalImg.height = "500";
+            captionText.innerHTML = "Dog";
+            break;
+
+        case "E" :
+            imgSrc = "https://cdn.mos.cms.futurecdn.net/SFdkbdefTaog6XKV3wyqJ7-1200-80.jpg";
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalImg.width = "500";
+            modalImg.height = "500";
+            captionText.innerHTML = "Egg";
+            break;
+
+        case "F" :
+            imgSrc = "https://api.time.com/wp-content/uploads/2019/11/fish-with-human-face-tik-tok-video.jpg";
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            modalImg.width = "500";
+            modalImg.height = "500";
+            captionText.innerHTML = "Fish";
+            break;
+
+    
+            
 
     }
 
