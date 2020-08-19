@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>IWP Q2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #ffe858;">
+	<h2 class="container heading">Group 3 Members</h2>
+	<br>
+	<div class="container">
+  <div class="row">
+    <div  class="col-sm">
+      <p id="p1"></p>
+      <p id="d1"></p>
+    </div>
+    <hr>
+    <div class="col-sm">
+      <p id="p2"></p>
+      <p id="d2"></p>
+    </div>
+    <hr>
+    <div class="col-sm">
+      <p id="p3"></p>
+      <p id="d3"></p>
+    </div>
+  </div>
+</div>
+<div id="date" class="container"></div>
+<script type="text/javascript">
+	var person1 = {
+  firstName: "Ashesh",   //JavaScript String Object
+  lastName : "Cholkar",
+  reg_no     : "18BCE10065",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("p1").innerHTML = person1.fullName();
+document.getElementById("d1").innerHTML = person1.reg_no;
+
+var person2 = {
+  firstName: "Gaurav",
+  lastName : "Chandiramani",
+  reg_no     : "18BCE10099",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("p2").innerHTML = person2.fullName();
+document.getElementById("d2").innerHTML = person2.reg_no;
+
+var person3 = {
+  firstName: "Kartik",
+  lastName : "Kumar",
+  reg_no     : "18BCE10138",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+document.getElementById("p3").innerHTML = person3.fullName();
+document.getElementById("d3").innerHTML = person3.reg_no;
+
+//JavaScript Date Object
+
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
+</body>
+</html>
