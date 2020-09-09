@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISBN verification</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style type="text/css">
+    body{
+      background-color: orange;
+      margin: auto;
+    }
+    div{
+      background-color: #FF7C39;
+      margin-top: 30px;
+    }
+    h1{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body class="container">
+  <div><h1>ISBN Verification</h1></div>
+  <br><br>
+  <form action="#" onSubmit="return validate_isbn(this)">
+    <input type="text" id="text" name="isbnnum" placeholder="Enter ISBN Number">
+    <br>
+    <br>
+    <input type="submit" value="Verify">
+  </form>
+  <script>
+    function validate_isbn(isbn){
+    var patt = /^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$/;
+    if (patt.test(isbn.isbnnum.value)){
+      alert("ISBN Number is Valid.");
+      return true;
+    }
+    else{
+      alert("Invalid ISBN Number !");
+      return false;
+    }
+    }
+  </script>
+</body>
+</html>
